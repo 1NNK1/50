@@ -1,0 +1,24 @@
+/* Базовые стили: белый и серый, без анимаций */
+/* Анимации отключены: длительность близка к нулю, но события animationend
+   (нужны, например, для react-toastify) продолжают срабатывать */
+*, *::before, *::after {
+  box-sizing: border-box;
+  animation-duration: 0.01ms !important;
+  animation-delay: 0s !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  transition-delay: 0s !important;
+  scroll-behavior: auto !important;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f4f4f4;
+  color: #222;
+  font-family: system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+  line-height: 1.5;
+}
